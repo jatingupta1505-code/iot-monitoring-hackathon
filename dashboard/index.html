@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factory IoT Monitoring</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <div class="logo-icon">◈</div>
+                <div>
+                    <h2>FactoryIQ</h2>
+                    <span>IoT MONITORING</span>
+                </div>
+            </div>
+
+            <nav>
+                <a class="active">Dashboard</a>
+                <a>Machines</a>
+                <a>Telemetry</a>
+                <a>Alerts</a>
+            </nav>
+
+            <div class="cloud-status">
+                <span class="status-dot"></span>
+                <div>
+                    <strong>AWS Cloud</strong>
+                    <small>Connected</small>
+                </div>
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main">
+
+            <header class="topbar">
+
+                <div>
+                    <p class="eyebrow">INDUSTRIAL OPERATIONS</p>
+                    <h1>IoT Monitoring Dashboard</h1>
+                    <p class="subtitle">
+                        Real-time factory machine health and telemetry
+                    </p>
+                </div>
+
+                <div class="live">
+                    <span class="live-dot"></span>
+                    LIVE
+                </div>
+
+            </header>
+
+
+            <!-- Stats -->
+            <section class="stats">
+
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <span>Total Devices</span>
+                        <div class="icon blue">◉</div>
+                    </div>
+                    <h2>01</h2>
+                    <p>Registered machines</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <span>Online</span>
+                        <div class="icon green">✓</div>
+                    </div>
+                    <h2 class="green-text">01</h2>
+                    <p>Connected devices</p>
+                </div>
+
+                <div class="stat-card warning-card">
+                    <div class="stat-top">
+                        <span>Warnings</span>
+                        <div class="icon yellow">!</div>
+                    </div>
+                    <h2 class="yellow-text">01</h2>
+                    <p>Needs attention</p>
+                </div>
+
+                <div class="stat-card danger-card">
+                    <div class="stat-top">
+                        <span>Active Alerts</span>
+                        <div class="icon red">⚠</div>
+                    </div>
+                    <h2 class="red-text">01</h2>
+                    <p>Critical conditions</p>
+                </div>
+
+            </section>
+
+
+            <!-- Main Grid -->
+            <section class="dashboard-grid">
+
+                <!-- Machine -->
+                <div class="panel machine-panel">
+
+                    <div class="panel-header">
+                        <div>
+                            <p class="panel-label">MACHINE STATUS</p>
+                            <h2>Factory Machine 01</h2>
+                        </div>
+
+                        <span class="badge warning">
+                            ● WARNING
+                        </span>
+                    </div>
+
+                    <div class="machine-content">
+
+                        <div class="machine-visual">
+                            <div class="machine-ring">
+                                <div class="machine-core">
+                                    ⚙
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="machine-info">
+
+                            <div class="metric">
+                                <div>
+                                    <span>Temperature</span>
+                                    <strong>86°C</strong>
+                                </div>
+                                <div class="metric-bar">
+                                    <div class="bar temp"></div>
+                                </div>
+                            </div>
+
+                            <div class="metric">
+                                <div>
+                                    <span>Pressure</span>
+                                    <strong>31 PSI</strong>
+                                </div>
+                                <div class="metric-bar">
+                                    <div class="bar pressure"></div>
+                                </div>
+                            </div>
+
+                            <div class="machine-meta">
+                                <div>
+                                    <small>Device ID</small>
+                                    <b>factory-machine-01</b>
+                                </div>
+
+                                <div>
+                                    <small>Last Update</small>
+                                    <b>Just now</b>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Alert -->
+                <div class="panel alert-panel">
+
+                    <div class="panel-header">
+                        <div>
+                            <p class="panel-label">SYSTEM ALERTS</p>
+                            <h2>Recent Alerts</h2>
+                        </div>
+
+                        <span class="alert-count">01</span>
+                    </div>
+
+                    <div class="alert-item">
+
+                        <div class="alert-icon">
+                            ⚠
+                        </div>
+
+                        <div class="alert-details">
+                            <strong>High Temperature</strong>
+                            <span>Factory Machine 01</span>
+                            <small>Temperature exceeded 80°C</small>
+                        </div>
+
+                        <div class="alert-time">
+                            Now
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Telemetry -->
+            <section class="panel telemetry-panel">
+
+                <div class="panel-header">
+
+                    <div>
+                        <p class="panel-label">LIVE TELEMETRY</p>
+                        <h2>Machine Performance</h2>
+                    </div>
+
+                    <select>
+                        <option>Temperature</option>
+                        <option>Pressure</option>
+                    </select>
+
+                </div>
+
+                <div class="chart">
+
+                    <div class="chart-line"></div>
+
+                    <div class="chart-values">
+                        <span>110°C</span>
+                        <span>90°C</span>
+                        <span>70°C</span>
+                        <span>50°C</span>
+                    </div>
+
+                    <div class="chart-message">
+                        Live telemetry visualization
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <footer>
+                <span>FactoryIQ • Cloud IoT Monitoring</span>
+                <span>Powered by AWS IoT Core + Lambda + DynamoDB</span>
+            </footer>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+# Python virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# AWS IoT certificates and private keys
+*.pem
+*.pem.crt
+*.key
+
+# Environment/secrets
+.env
+
+# Windows
+Thumbs.db
+Desktop.ini
